@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of Hollywood: From Blockbusters to Box Office</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Evolution of Hollywood</h1>
+        <p class="subtitle">From Blockbusters to Box Office (1980-2015)</p>
+        
+        <nav id="scene-nav">
+            <button class="nav-btn active" data-scene="scene1">Financial Evolution</button>
+            <button class="nav-btn" data-scene="scene2">Genre Wars</button>
+            <button class="nav-btn" data-scene="scene3">Blockbuster Formula</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="scene-container">
+            <div id="scene-title">
+                <h2 id="current-scene-title">Hollywood's Financial Evolution (1980-2015)</h2>
+                <p id="current-scene-description">Overall trends in movie budgets, revenues, and profitability</p>
+            </div>
+            
+            <div id="visualization-container">
+                <div id="controls-panel">
+                    <!-- Scene-specific controls will be populated here -->
+                </div>
+                
+                <div id="visualization">
+                    <!-- D3 visualizations will be rendered here -->
+                </div>
+                
+                <div id="annotations">
+                    <!-- Key insights and annotations will appear here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data Source: TMDB 5000 Movie Dataset | Created with D3.js</p>
+    </footer>
+
+    <!-- D3.js and related libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-annotation@2.5.1/d3-annotation.min.js"></script>
+    
+    <!-- Project scripts -->
+    <script src="js/parameters.js"></script>
+    <script src="js/data-processor.js"></script>
+    <script src="js/scene1.js"></script>
+    <script src="js/scene2.js"></script>
+    <script src="js/scene3.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
